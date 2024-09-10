@@ -1,11 +1,12 @@
 package com.nudgem.plugins.checkoutsheetandroid;
 
-import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+import com.shopify.checkoutsheetkit.DefaultCheckoutEventProcessor;
+import com.shopify.checkoutsheetkit.ShopifyCheckoutSheetKit;
 
 public class CheckoutSheetAndroid {
 
-    public String echo(String value) {
-        Log.i("Echo", value);
-        return value;
+    public void presentCheckout(String checkoutUrl, AppCompatActivity activity, DefaultCheckoutEventProcessor processor) {
+        ShopifyCheckoutSheetKit.present(checkoutUrl, activity, processor);
     }
 }

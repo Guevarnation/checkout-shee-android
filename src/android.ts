@@ -6,5 +6,4 @@ const CheckoutSheetAndroid = registerPlugin<CheckoutSheetAndroidPlugin>(
   'CheckoutSheetAndroid',
 );
 
-export * from './definitions';
 export { CheckoutSheetAndroid };
